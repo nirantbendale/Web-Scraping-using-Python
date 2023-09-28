@@ -1,5 +1,5 @@
 # Web-Scraping-using-Python
-
+**The scraped website has not been published, and therefore, no link is provided in this project, nor is the link mentioned in the script.**
 ## Chapter 1: Crawling Publication Titles and Citation Numbers
 
 To complete task 1, I first identified the target website and located the publications page which listed all the papers. I used the Python requests library to download the page content and BeautifulSoup to parse the HTML. 
