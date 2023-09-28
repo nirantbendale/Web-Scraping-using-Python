@@ -8,6 +8,8 @@ I located all publication divs and extracted the title and citation text from ea
 
 Once all publications were extracted, the dictionary was converted to a Pandas dataframe and sorted by descending citation number. The top 25 rows of this dataframe were selected and converted to a markdown table using the tabulate library to present the expected output.
 
+![Output1](task-1-out.png)
+
 **This task demonstrated core skills like:**
 
 **- Web scraping using requests and BeautifulSoup** \
@@ -25,6 +27,10 @@ Similar to task 1, I located the LDO section elements and looped through to extr
 
 After crawling all pages, I used Pandas to calculate the average number of LDO items per year and plotted this in a line chart using Matplotlib. The Pandas dataframe was also sorted by LDO count and the top 25 rows were formatted into a table.
 
+![Output2](task-2-out.png) \
+![Output2a](task-2-scat.png)
+
+
 **This task demonstrated:**
 
 **- Reusing existing scraping logic to extract additional data** \
@@ -40,9 +46,19 @@ The third task incorporated more advanced analysis and visualization compared to
 
 For 3a, I first identified the top 10 authors by citation count. Then for each author, I extracted their co-authors and paper topics. This data was used to generate a network graph showing authors as nodes and co-authorships as edges. The most common paper topics for each author pair were annotated on the graph edges. This provided a clear visualization of collaboration networks and common topics.
 
+![Output3a](task-3a-out.png)
+
+
 For 3b, I extracted features like number of pages, references, images, etc from each publication page. The correlation between each feature and citation count was calculated using Pandas. The features with the highest positive correlation were selected as having the biggest impact on citations.
 
+![Output3b](task-3b-bar.png) \
+![Output3c](task-3b-out.png) \
+![Output3d](task-3b-heatmap.png) \
+
 Finally for 3c, I identified "journal" and "conference" papers by parsing the venue strings. The impact factor for journals was extracted from a manually curated lookup table. This allowed me to compare impact factors between journals and conferences in a box plot chart.
+
+![Output3e](task-3c-out.png) 
+
 
 **This task demonstrated:**
 
